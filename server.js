@@ -3,7 +3,7 @@ const multer = require('multer');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = process.env.port || 3000;
 
 // Setarea locației și a numelui fișierului
 const storage = multer.diskStorage({
